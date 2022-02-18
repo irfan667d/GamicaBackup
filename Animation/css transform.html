@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+
+    @keyframes Animation {
+        0%{
+            transform: rotate(-110deg);
+        }
+        50% {
+            transform: rotate(110deg);
+        }
+    
+    100% {
+            transform: rotate(-110deg);
+        }
+    
+     }
+
+
+    #needle{
+        width: 0;
+    height: 0;
+    border-top: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 150px solid black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    animation: Animation 12s ease-in-out 0s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    }
+    
+    #speedoMeter{
+        position: relative;
+        width: fit-content;
+    }
+
+</style>
+
+</head>
+<body>
+    
+
+    <div id="speedoMeter">
+
+        <img src="speedometer.png" alt="">
+
+        <div id='needle'>
+
+        </div>
+
+    </div>
+</body>
+</html>
